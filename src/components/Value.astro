@@ -1,0 +1,74 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="card bg-base-200 shadow-2xl">
+    <div class="card-body">
+        <h3 class="card-title text-4xl">La mejor opción para emprender</h3>
+        <div class="divider m-0"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div class="card bg-base-100 shadow-2xl">
+                <div class="card-body">
+                    <div
+                        class="flex flex-col items-center lg:flex-row lg:gap-3"
+                    >
+                        <Icon name="material-symbols:code" class="text-4xl" />
+                        <h3 class="card-title">100% Open Source</h3>
+                    </div>
+                    <p>
+                        Transparente, auditable y respaldado por la comunidad.
+                        Modifícalo, mejóralo y compártelo sin restricciones.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-2xl">
+                <div class="card-body">
+                    <div
+                        class="flex flex-col items-center lg:flex-row lg:gap-3"
+                    >
+                        <Icon
+                            name="material-symbols:money-off"
+                            class="text-4xl"
+                        />
+                        <h3 class="card-title">Gratis para Siempre</h3>
+                    </div>
+                    <p>
+                        Sin costos ocultos por transacción y sin límites de
+                        usuarios o productos.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-2xl">
+                <div class="card-body">
+                    <div
+                        class="flex flex-col items-center lg:flex-row lg:gap-3"
+                    >
+                        <Icon name="material-symbols:lock" class="text-4xl" />
+                        <h3 class="card-title">Dueño de tus Datos</h3>
+                    </div>
+                    <p>
+                        Se instala en tu computadora local. Tu información
+                        financiera y de clientes es solo tuya.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-2xl">
+                <div class="card-body">
+                    <div
+                        class="flex flex-col items-center lg:flex-row lg:gap-3"
+                    >
+                        <Icon
+                            name="material-symbols:settings"
+                            class="text-4xl"
+                        />
+                        <h3 class="card-title">Altamente Personalizable</h3>
+                    </div>
+                    <p>
+                        Adapta los centros de producción, roles de usuario y
+                        flujos de trabajo a la medida exacta de tu operación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

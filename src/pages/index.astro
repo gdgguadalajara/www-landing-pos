@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Principal from "../components/Principal.astro";
+import Value from "../components/Value.astro";
+import Gallery from "../components/Gallery.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Point of Sale</title>
+	</head>
+	<body>
+		<Navbar />
+		<div class="grid place-content-center">
+			<div class="px-5 mt-10 flex flex-col gap-5 lg:gap-15 max-w-7xl">
+				<Principal />
+				<Value />
+				<Gallery />
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>

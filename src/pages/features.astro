@@ -1,0 +1,341 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import GalleryCard from "../components/GalleryCard.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Point of Sale</title>
+    </head>
+    <body>
+        <Navbar />
+
+        <div class="grid place-content-center">
+            <div class="px-5 mt-10 flex flex-col gap-3 lg:gap-5 max-w-7xl">
+                <div class="card bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-4xl text-center">
+                            Administrador
+                        </h3>
+                        <div class="divider m-0"></div>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+                            <GalleryCard
+                                title="Dashboard - Ventas"
+                                image="/admin/dashboard.png"
+                            >
+                                <p>
+                                    Toma el control estratégico con una visión
+                                    360° de tu operación. Visualiza el
+                                    rendimiento financiero mediante indicadores
+                                    de ventas en tiempo real (hoy, semana y mes)
+                                    y una tabla detallada de ganancias mensuales
+                                    para monitorear tu rentabilidad real.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Dashboard - Rendimiento de productos"
+                                image="/admin/dashboard-2.png"
+                            >
+                                <p>
+                                    Optimiza tu inventario y menú analizando el
+                                    comportamiento de consumo con el Top 3 de
+                                    productos más y menos vendidos; información
+                                    clave para potenciar tus éxitos y ajustar
+                                    estrategias en los artículos de baja
+                                    rotación.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Gestión de Usuarios"
+                                image="/admin/users.png"
+                            >
+                                <p>
+                                    Control total sobre la seguridad y el
+                                    acceso. Administra perfiles y mantén un
+                                    registro de auditoría sobre las acciones de
+                                    tu equipo para garantizar una operación
+                                    transparente.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Centros de Producción"
+                                image="/admin/centers.png"
+                            >
+                                <p>
+                                    Optimiza la logística interna de tu negocio.
+                                    Configura rutas de despacho automáticas para
+                                    que cada orden llegue instantáneamente a su
+                                    destino, ya sea cocina, barra o centros de
+                                    producción personalizados, eliminando
+                                    errores de comunicación.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Categorías"
+                                image="/admin/categories.png"
+                            >
+                                <p>
+                                    Organiza tu catálogo de forma inteligente.
+                                    Estructura tus productos en grupos lógicos
+                                    para agilizar la navegación en el punto de
+                                    venta y personaliza la disponibilidad por
+                                    dias u horas.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Productos"
+                                image="/admin/products.png"
+                            >
+                                <p>
+                                    Gestiona descripciones, precios y
+                                    disponibilidad de manera centralizada,
+                                    permitiendo una actualización rápida y
+                                    precisa de toda tu oferta comercial.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Gestión de Pisos y Mesas"
+                                image="/admin/floorplan.png"
+                            >
+                                <p>
+                                    Digitaliza tu espacio físico. Crea un mapa
+                                    interactivo de tus salones y terrazas,
+                                    gestionando la ocupación de mesas en tiempo
+                                    real y permitiendo al personal visualizar el
+                                    estado del servicio de un solo vistazo.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Sesiones de Caja"
+                                image="/admin/cashiersession.png"
+                            >
+                                <p>
+                                    Control riguroso del flujo de efectivo.
+                                    Administra aperturas, cierres y arqueos de
+                                    caja con total transparencia, facilitando la
+                                    conciliación de ingresos y minimizando las
+                                    discrepancias al final de cada jornada.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Tickets"
+                                image="/admin/tickets.png"
+                            >
+                                <p>
+                                    Historial completo de ventas a tu alcance.
+                                    Consulta o genera comprobantes digitales de
+                                    cada transacción. Mantén un archivo
+                                    organizado para aclaraciones o auditorías
+                                    rápidas.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Gastos"
+                                image="/admin/expenses.png"
+                            >
+                                <p>
+                                    Visibilidad financiera total. Registra
+                                    salidas de capital, como pagos a proveedores
+                                    y costos operativos diarios para integrarlos
+                                    en tu balance general, permitiéndote conocer
+                                    la rentabilidad real de tu operación.
+                                </p>
+                            </GalleryCard>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-4xl text-center">Cajero</h3>
+                        <div class="divider m-0"></div>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+                            <GalleryCard
+                                title="Apertura y Cierre de Cajas"
+                                image="/cashier/cashcontrol.png"
+                            >
+                                <p>
+                                    Garantiza la integridad de tus ingresos
+                                    desde el primer minuto. Registra el saldo
+                                    inicial de forma rápida y realiza arqueos
+                                    precisos al finalizar el turno, asegurando
+                                    que cada centavo esté debidamente conciliado
+                                    y justificado.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Gastos de Caja"
+                                image="/cashier/expenses.png"
+                            >
+                                <p>
+                                    Gestiona salidas de efectivo inesperadas o
+                                    pagos menores a proveedores sin
+                                    complicaciones. Registra cada movimiento de
+                                    "caja chica" al instante para mantener un
+                                    balance transparente y evitar descuadres al
+                                    cierre de la jornada.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Mis Tickets"
+                                image="/cashier/tickets.png"
+                            >
+                                <p>
+                                    Control total sobre las transacciones del
+                                    turno. Consulta el historial de ventas
+                                    realizadas personalmente, permitiendo
+                                    reimpresiones rápidas, correcciones o
+                                    cancelaciones autorizadas de forma
+                                    organizada y eficiente.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Ticket Digital (QR)"
+                                image="/cashier/qrticket.png"
+                            >
+                                <p>
+                                    Moderniza la experiencia de tus clientes y
+                                    reduce costos operativos. Genera
+                                    comprobantes electrónicos mediante códigos
+                                    QR para que el cliente reciba su ticket
+                                    directamente en su móvil, eliminando el uso
+                                    innecesario de papel.
+                                </p>
+                            </GalleryCard>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-4xl text-center">Mesero</h3>
+                        <div class="divider m-0"></div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                            <GalleryCard
+                                title="Mapa de Mesas e Interfaz de Piso"
+                                image="/waiter/tables.png"
+                                isVertical
+                            >
+                                <p>
+                                    Toma el control de tu zona de servicio.
+                                    Visualiza en tiempo real el estado de cada
+                                    mesa (libre u ocupada) y abre cuentas al
+                                    instante mediante un mapa interactivo
+                                    diseñado para la rapidez del servicio en
+                                    sala.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Gestión de Tickets y Comandas"
+                                image="/waiter/ticket.png"
+                                isVertical
+                            >
+                                <p>
+                                    Administra las órdenes de tus clientes con
+                                    total precisión. Añade productos a cuentas
+                                    activas, consulta el historial de consumos
+                                    de cada mesa y gestiona la preparación de
+                                    pedidos en comunicación directa con los
+                                    centros de producción.
+                                </p>
+                            </GalleryCard>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-4xl text-center">
+                            Personal de producción (KDS)
+                        </h3>
+                        <div class="divider m-0"></div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                            <GalleryCard
+                                title="Monitor de Producción - Chef"
+                                image="/preparer/chef.png"
+                            >
+                                <p>
+                                    Optimiza el flujo de trabajo en cocina.
+                                    Visualiza las comandas entrantes en tiempo
+                                    real, organiza la cola de preparación por
+                                    orden de llegada y marca los pedidos listos
+                                    para su entrega inmediata, asegurando que
+                                    cada orden salga a tiempo y sin errores de
+                                    comunicación.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Monitor de Producción - Bartender"
+                                image="/preparer/bartender.png"
+                            >
+                                <p>
+                                    Optimiza el flujo de trabajo en barra.
+                                    Visualiza las comandas entrantes en tiempo
+                                    real, organiza la cola de preparación por
+                                    orden de llegada y marca los pedidos listos
+                                    para su entrega inmediata, asegurando que
+                                    cada orden salga a tiempo y sin errores de
+                                    comunicación.
+                                </p>
+                            </GalleryCard>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-4xl text-center">
+                            Personalización
+                        </h3>
+                        <div class="divider m-0"></div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                            <GalleryCard
+                                title="Personalización de Temas e Identidad"
+                                image="/theme.png"
+                            >
+                                <p>
+                                    Haz que la plataforma sea una extensión de
+                                    tu marca. Adapta la interfaz visual
+                                    ajustando paletas de colores, logotipos y
+                                    estilos de diseño, permitiendo que el
+                                    sistema refleje la identidad corporativa de
+                                    tu negocio para una experiencia de usuario
+                                    coherente y profesional.
+                                </p>
+                            </GalleryCard>
+                            <GalleryCard
+                                title="Personalización de Temas e Identidad-2"
+                                image="/theme-2.png"
+                            >
+                                <p>
+                                    Haz que la plataforma sea una extensión de
+                                    tu marca. Adapta la interfaz visual
+                                    ajustando paletas de colores, logotipos y
+                                    estilos de diseño, permitiendo que el
+                                    sistema refleje la identidad corporativa de
+                                    tu negocio para una experiencia de usuario
+                                    coherente y profesional.
+                                </p>
+                            </GalleryCard>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Footer />
+    </body>
+</html>
+
+<script>
+    const openModal = (title: string) => {
+        (document.getElementById(title) as any)?.showModal();
+    };
+    const imgs = document.querySelectorAll("img.c.w-full");
+    imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+            openModal(`modal-${img.getAttribute("alt")}`);
+        });
+    });
+</script>

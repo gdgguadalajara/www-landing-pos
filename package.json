@@ -1,0 +1,21 @@
+{
+  "name": "pos-gdgguadalajara-com",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@iconify-json/material-symbols": "^1.2.51",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.9",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.14"
+  }
+}

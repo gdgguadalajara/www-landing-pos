@@ -1,0 +1,55 @@
+---
+import GalleryCard from "./GalleryCard.astro";
+---
+
+<div id="gallery" class="card bg-base-200 shadow-2xl">
+    <div class="card-body">
+        <h3 class="card-title text-4xl">Galería</h3>
+        <div class="divider m-0"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <GalleryCard title="Administrador" image="/admin/dashboard.png">
+                <p>
+                    Administra usuarios, centros de producción y tu catálogo de
+                    productos. Diseña el mapa de tus mesas y supervisa tus
+                    finanzas —cajas, tickets y gastos— desde un solo centro de
+                    mando integral.
+                </p>
+            </GalleryCard>
+            <GalleryCard
+                title="Sistema de visualización para centros de producción"
+                image="/preparer/chef.png"
+            >
+                <p>
+                    Recibe pedidos al instante, organiza la carga de trabajo por
+                    estaciones y elimina el papel en tu cocina con un sistema de
+                    comandas digitales inteligente y dinámico.
+                </p>
+            </GalleryCard>
+            <GalleryCard
+                title="Tickets Digitales"
+                image="/cashier/qrticket.png"
+            >
+                <p>
+                    Reduce gastos en consumibles y cuida el medio ambiente
+                    generando tickets digitales que tus clientes pueden escanear
+                    directamente desde su celular sin necesidad de impresoras.
+                </p>
+            </GalleryCard>
+        </div>
+        <a href="/features" class="btn btn-primary mt-5"
+            >Ver todas las funciones</a
+        >
+    </div>
+</div>
+
+<script>
+    const openModal = (title: string) => {
+        (document.getElementById(title) as any)?.showModal();
+    };
+    const imgs = document.querySelectorAll("img.c.w-full");
+    imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+            openModal(`modal-${img.getAttribute("alt")}`);
+        });
+    });
+</script>
