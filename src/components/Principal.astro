@@ -1,27 +1,34 @@
-<section class="flex flex-col gap-3">
-    <span class="text-rotate text-5xl">
-        <span class="justify-items-center">
-            <span>TU NEGOCIO</span>
-            <span>TUS REGLAS</span>
-            <span>TUS DATOS</span>
-        </span>
-    </span>
-    <p>
-        El primer sistema de Punto de Venta (POS) profesional verdaderamente
-        libre. Open Source, gratuito para siempre y diseñado para ejecutarse en
-        tu propio equipo. Recupera el control y olvídate de las rentas
-        mensuales.
-    </p>
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="flex flex-col gap-3 max-w-7xl">
+    <div class="flex my-8 gap-10">
+        <div class="flex-1 flex flex-col justify-center">
+            <p class="text-primary font-bold text-5xl lg:text-6xl mb-5">
+                Sistema Punto de Venta
+            </p>
+            <p class="text-lg">
+                Profesional, gratuito y diseñado para ejecutarse en tu propio
+                equipo. Recupera el control y olvídate de las rentas mensuales.
+            </p>
+        </div>
+        <div class="hidden lg:block flex-1">
+            <img class="shadow-xl" src="/login.png" />
+        </div>
+    </div>
     <div class="flex flex-col lg:flex-row gap-3 mt-3">
         <a
             href="https://github.com/gdgguadalajara/pos"
             target="_blank"
-            class="btn btn-lg btn-primary"
+            class="btn btn-lg btn-primary lg:w-72"
         >
+            <Icon name="material-symbols:rocket-launch" class="text-2xl" />
             Ver Código en GitHub
         </a>
-        <a href="#gallery" class="btn btn-lg btn-primary btn-outline"
-            >Ver Galería de Pantallas</a
-        >
+        <a href="#gallery" class="btn btn-lg btn-primary btn-outline lg:w-72">
+            <Icon name="material-symbols:gallery-thumbnail" class="text-2xl" />
+            Ver Galería
+        </a>
     </div>
 </section>
